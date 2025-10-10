@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURLYDOC - Coming Soon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Playfair Display', serif;
+            color: #4A2B21;
+            background: linear-gradient(135deg, #F8F5EE 0%, #E8E0D7 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .background-texture {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/jpeg;base64,');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.15; 
+            filter: grayscale(100%) brightness(150%); 
+            z-index: 1;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 2;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.75); 
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 4.5em; 
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.05);
+            color: #6D4C3D; 
+        }
+
+        p.slogan {
+            font-family: 'Lora', serif;
+            font-size: 1.8em;
+            margin-top: 5px;
+            margin-bottom: 40px;
+            color: #795548; 
+            font-style: italic;
+        }
+
+        p.credit {
+            font-family: 'Lora', serif;
+            font-size: 1.1em;
+            margin-top: 30px;
+            color: #8D6E63; 
+            letter-spacing: 0.5px;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 3.5em;
+            }
+            p.slogan {
+                font-size: 1.5em;
+            }
+            .container {
+                padding: 30px;
+                margin: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            p.slogan {
+                font-size: 1.2em;
+            }
+            p.credit {
+                font-size: 0.9em;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-texture"></div>
+    <div class="container">
+        <h1>CURLY DOC</h1>
+        <p class="slogan">coming soon</p>
+        <p class="credit">by Ipshita Bisht Rawat</p>
+    </div>
+</body>
+</html>
